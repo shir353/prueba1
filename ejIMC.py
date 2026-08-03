@@ -8,10 +8,10 @@
 # IMC 25 a 29.9 sobreperso
 # IMC 30 o mas Obesidad
 
-Peso  = float(input("Ingrese su peso en kilogramos:"))
+peso  = float(input("Ingrese su peso en kilogramos:"))
 altura = float(input("Ingrese su estatura en metros:"))
 
-IMC = PESO / (altura**2)
+IMC = peso/ (altura**2)
 
 if IMC <18.5:
     print("BAjo Peso")
@@ -22,4 +22,5 @@ elif IMC <=18.5 and IMC < 25:
 elif IMC >= 25.0 and IMC< 30:    
     print("Sobrepeso")
     
-else: IMC >=30:    print("Obesidad")
+elif IMC >=30:
+    print("Obesidad")
